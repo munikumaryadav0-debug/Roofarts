@@ -23,6 +23,11 @@
     footer{background:#0a1421;color:#d5dfeb;padding:55px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.footer-brand p{max-width:360px;color:#9eafc3;font-size:14px}.footer-title{font-size:13px;color:white;font-weight:800;margin-bottom:13px}.footer-links{display:grid;gap:9px;color:#9eafc3;font-size:13px}.footer-links a:hover{color:white}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:18px;color:#8293a8;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
     @media(max-width:900px){.links{gap:14px}.hero-grid,.inside-grid{grid-template-columns:1fr}.hero-visual{max-width:600px;width:100%;margin:auto}.cards{grid-template-columns:repeat(2,1fr)}.step-grid{grid-template-columns:repeat(3,1fr)}.audience-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:650px){.topbar .container{justify-content:center}.nav{height:66px}.menu-btn{display:block}.links{display:none;position:absolute;top:66px;left:0;right:0;background:white;padding:20px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.nav>.btn{display:none}.hero{padding:70px 0 55px}.hero-grid{gap:30px}.hero-visual{min-height:310px}.roof-art{min-height:270px}.float-note{right:0;bottom:0}.stats-grid{grid-template-columns:repeat(2,1fr);gap:15px}.stat{padding:5px 12px;border:0}.stat:first-child{padding-left:12px}section{padding:65px 0}.cards,.why-grid{grid-template-columns:1fr}.step-grid{grid-template-columns:1fr 1fr}.checklist{grid-template-columns:1fr}.cta-panel{padding:30px;align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:25px}.audience-grid{grid-template-columns:1fr 1fr}}
+
+    /* Pricing and cart */
+    .pricing{background:#fff}.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.price-card{border:1px solid var(--line);border-radius:18px;padding:25px;background:#fff;display:flex;flex-direction:column;align-items:flex-start;min-height:270px}.price-card h3{font-size:18px;margin:9px 0}.price-card p{color:var(--muted);font-size:14px;margin:0 0 18px}.price-label{font-size:10px;letter-spacing:1.6px;font-weight:850;color:var(--blue)}.price{font-size:31px;font-weight:850;letter-spacing:-1px;margin:auto 0 17px}.price small{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:0}.price-card .btn{width:100%;cursor:pointer}.featured-price{border-color:#8ab9f0;box-shadow:0 12px 35px rgba(36,120,229,.1)}.price-disclaimer{font-size:12px;color:var(--muted);margin:22px auto 0;max-width:850px;text-align:center}.cart-nav{cursor:pointer;gap:8px}.cart-nav span{display:inline-grid;place-items:center;min-width:21px;height:21px;border-radius:50%;background:#fff;color:var(--blue);font-size:11px;padding:0 5px}.cart-backdrop{position:fixed;inset:0;background:rgba(5,15,27,.62);z-index:40}.cart-dialog{position:fixed;z-index:41;right:0;top:0;height:100dvh;width:min(480px,100%);overflow:auto;background:#fff;box-shadow:-20px 0 60px rgba(0,0,0,.2);padding:28px;display:flex;flex-direction:column}.cart-dialog[hidden],.cart-backdrop[hidden]{display:none}.cart-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px}.cart-head h2{margin:4px 0 0;font-size:26px}.cart-close{border:0;background:#f0f4f8;border-radius:50%;width:38px;height:38px;font-size:25px;cursor:pointer}.cart-items{padding:14px 0;flex:1}.cart-empty{color:var(--muted);font-size:14px}.cart-line{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-line h3{font-size:14px;margin:0 0 4px}.cart-line small{color:var(--muted)}.cart-line-actions{display:flex;align-items:center;gap:8px;margin-top:8px}.qty-btn,.remove-btn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:3px 9px;cursor:pointer}.remove-btn{color:#b42318}.cart-total{display:flex;justify-content:space-between;padding:17px 0;border-top:1px solid var(--line);font-size:16px}.checkout-note,.paypal-status{font-size:12px;color:var(--muted)}.paypal-status{padding:10px;border-radius:9px;background:#f4f7fb;margin:8px 0}.cart-continue{width:100%;margin-top:12px;background:#fff;color:var(--blue)}#paypal-button-container{min-height:44px}.cart-dialog .price-disclaimer{text-align:left;margin:15px 0 0}.add-cart{cursor:pointer}
+    @media(max-width:900px){.pricing-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.pricing-grid{grid-template-columns:1fr}.cart-dialog{padding:20px}.cart-nav{font-size:13px;padding:10px 13px}}
       /* UX refinements */
 :focus-visible{outline:3px solid #53c7e8;outline-offset:3px}
 .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#2478e5,#53c7e8);z-index:100}
@@ -38,8 +43,8 @@
   <header><nav class="container nav">
     <a class="brand" href="#"><span class="brand-mark">R</span><span>RoofArts<small>AERIAL ROOF MEASUREMENTS</small></span></a>
     <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">☰</button>
-    <div class="links" id="primary-navigation"><a href="#services">Services</a><a href="#reports">What's Included</a><a href="#process">How It Works</a><a href="#about">Why RoofArts</a><a href="#faq">FAQs</a></div>
-    <a class="btn" href="#contact">Request a Measurement</a>
+    <div class="links" id="primary-navigation"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reports">What's Included</a><a href="#process">How It Works</a><a href="#about">Why RoofArts</a><a href="#faq">FAQs</a></div>
+    <button class="btn cart-nav" id="cart-open" type="button" aria-haspopup="dialog" aria-controls="cart-dialog">Cart <span id="cart-count">0</span></button><a class="btn" href="#contact">Request a Measurement</a>
   </nav></header>
   <main>
     <section class="hero"><div class="container hero-grid">
@@ -61,6 +66,30 @@
         <article class="service"><div class="service-icon">◫</div><h3>Specialty Measurements</h3><p>Support for metal roofing layouts, decks and other exterior measurement requirements based on project scope.</p><span class="tag">Project-specific details</span></article>
       </div>
     </div></section>
+
+    <section class="pricing" id="pricing"><div class="container">
+      <div class="section-head"><span class="kicker">Transparent service pricing</span><h2>Choose the measurements your project needs</h2><p>Pick a report, add it to your cart and check out securely with PayPal. Sample USD rates are shown and can be updated before launch.</p></div>
+      <div class="pricing-grid">
+        <article class="price-card"><span class="price-label">ROOF</span><h3>Roof Measurement Report</h3><p>Roof area, squares, facets, pitch and key edge lengths.</p><div class="price">$49 <small>USD / report</small></div><button class="btn add-cart" data-product="roof-report">Add to cart</button></article>
+        <article class="price-card"><span class="price-label">SIDING</span><h3>Wall &amp; Siding Measurements</h3><p>Exterior elevations, siding areas and relevant dimensions.</p><div class="price">$39 <small>USD / report</small></div><button class="btn add-cart" data-product="siding-report">Add to cart</button></article>
+        <article class="price-card"><span class="price-label">GUTTERS</span><h3>Gutter Measurements</h3><p>Gutter runs, downspout quantities and related lengths.</p><div class="price">$29 <small>USD / report</small></div><button class="btn add-cart" data-product="gutter-report">Add to cart</button></article>
+        <article class="price-card featured-price"><span class="price-label">POPULAR COMBINATION</span><h3>Complete Exterior Report</h3><p>Combined roof, wall, siding and gutter measurements.</p><div class="price">$99 <small>USD / report</small></div><button class="btn add-cart" data-product="exterior-report">Add to cart</button></article>
+        <article class="price-card"><span class="price-label">BLUEPRINTS</span><h3>Blueprint Takeoff</h3><p>Plan-based measurement takeoffs for construction projects.</p><div class="price">$79 <small>USD / project</small></div><button class="btn add-cart" data-product="blueprint-takeoff">Add to cart</button></article>
+        <article class="price-card"><span class="price-label">CUSTOM SCOPE</span><h3>Specialty Measurements</h3><p>Metal roofing, decks and other project-specific dimensions.</p><div class="price">$59 <small>USD / project</small></div><button class="btn add-cart" data-product="specialty-measurement">Add to cart</button></article>
+      </div>
+      <p class="price-disclaimer">Pricing shown is illustrative and must be confirmed by RoofArts before accepting live payments. Final scope, property complexity and report availability may affect pricing.</p>
+    </div></section>
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-dialog" id="cart-dialog" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+      <div class="cart-head"><div><span class="kicker">YOUR ORDER</span><h2 id="cart-title">Shopping cart</h2></div><button class="cart-close" id="cart-close" type="button" aria-label="Close cart">×</button></div>
+      <div id="cart-items" class="cart-items"><p class="cart-empty">Your cart is empty. Add a measurement service to get started.</p></div>
+      <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00 USD</strong></div>
+      <p class="checkout-note">Secure checkout powered by PayPal. Your payment details are handled by PayPal.</p>
+      <div id="paypal-status" class="paypal-status" role="status">Add a service to continue to checkout.</div>
+      <div id="paypal-button-container"></div>
+      <button class="btn cart-continue" id="cart-continue" type="button">Continue browsing</button>
+      <p class="price-disclaimer">By paying, you request the selected measurement service. RoofArts will confirm property details and delivery requirements.</p>
+    </aside>
     <section id="reports"><div class="container inside-grid">
       <div class="blueprint"><span class="blueprint-label">ROOFARTS · SAMPLE MEASUREMENT VIEW</span><div class="plan"></div><span class="blueprint-label">AREA / PITCH / FACET / EDGE DETAILS</span></div>
       <div><span class="kicker">Inside the report</span><h2 style="font-size:clamp(30px,4vw,42px);line-height:1.15;letter-spacing:-1px">The details behind a better estimate.</h2><p style="color:var(--muted)">A useful measurement report organizes the property into clear data that your team can review while preparing estimates, planning materials or documenting a project.</p>
@@ -88,6 +117,74 @@
   <footer><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="#" style="color:white"><span class="brand-mark">R</span><span>RoofArts<small style="color:#9eafc3">AERIAL ROOF MEASUREMENTS</small></span></a><p>Clear roof and exterior measurement information to support confident estimates, smarter planning and better project workflows.</p></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="#services">Our Services</a><a href="#reports">What's Included</a><a href="#process">How It Works</a><a href="#faq">FAQs</a></div></div><div><div class="footer-title">Get in touch</div><div class="footer-links"><a href="#contact">Request a Measurement</a><a href="mailto:info@roofarts.com">Email RoofArts</a></div></div></div><div class="copyright"><span>© <span id="year"></span> RoofArts Aerial Roof Measurements. All rights reserved.</span><span>Measure smarter. Build with confidence.</span></div></div></footer>
   <script>
 document.getElementById('year').textContent=new Date().getFullYear();
+
+/* RoofArts cart + PayPal checkout. The server-side catalogue is authoritative. */
+const SERVICE_CATALOG={
+ 'roof-report':{name:'Roof Measurement Report',price:49},
+ 'siding-report':{name:'Wall & Siding Measurements',price:39},
+ 'gutter-report':{name:'Gutter Measurements',price:29},
+ 'exterior-report':{name:'Complete Exterior Report',price:99},
+ 'blueprint-takeoff':{name:'Blueprint Takeoff',price:79},
+ 'specialty-measurement':{name:'Specialty Measurements',price:59}
+};
+const cart=new Map();
+const cartDialog=document.getElementById('cart-dialog');
+const cartBackdrop=document.getElementById('cart-backdrop');
+const cartItems=document.getElementById('cart-items');
+const cartTotal=document.getElementById('cart-total');
+const cartCount=document.getElementById('cart-count');
+const paypalStatus=document.getElementById('paypal-status');
+let paypalButtonsRendered=false;
+const money=value=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(value);
+function renderCart(){
+ const entries=[...cart.entries()];
+ const count=entries.reduce((sum,[,qty])=>sum+qty,0);
+ const total=entries.reduce((sum,[id,qty])=>sum+SERVICE_CATALOG[id].price*qty,0);
+ cartCount.textContent=count;
+ cartTotal.textContent=money(total)+' USD';
+ if(!entries.length){cartItems.innerHTML='<p class="cart-empty">Your cart is empty. Add a measurement service to get started.</p>';paypalStatus.textContent='Add a service to continue to checkout.';return;}
+ cartItems.innerHTML=entries.map(([id,qty])=>{const item=SERVICE_CATALOG[id];return '<div class="cart-line"><div><h3>'+item.name+'</h3><small>'+money(item.price)+' each</small><div class="cart-line-actions"><button class="qty-btn" data-action="minus" data-id="'+id+'" aria-label="Decrease quantity">−</button><span>'+qty+'</span><button class="qty-btn" data-action="plus" data-id="'+id+'" aria-label="Increase quantity">+</button><button class="remove-btn" data-action="remove" data-id="'+id+'">Remove</button></div></div><strong>'+money(item.price*qty)+'</strong></div>';}).join('');
+ paypalStatus.textContent='Ready for secure PayPal checkout.';
+}
+function openCart(){cartDialog.hidden=false;cartBackdrop.hidden=false;document.body.style.overflow='hidden';renderCart();}
+function closeCart(){cartDialog.hidden=true;cartBackdrop.hidden=true;document.body.style.overflow='';}
+document.getElementById('cart-open').addEventListener('click',openCart);
+document.getElementById('cart-close').addEventListener('click',closeCart);
+document.getElementById('cart-continue').addEventListener('click',closeCart);
+cartBackdrop.addEventListener('click',closeCart);
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!cartDialog.hidden)closeCart();});
+document.querySelectorAll('.add-cart').forEach(button=>button.addEventListener('click',()=>{const id=button.dataset.product;cart.set(id,Math.min(10,(cart.get(id)||0)+1));renderCart();openCart();}));
+cartItems.addEventListener('click',event=>{const button=event.target.closest('button[data-action]');if(!button)return;const {id,action}=button.dataset;const qty=cart.get(id)||0;if(action==='plus')cart.set(id,Math.min(10,qty+1));if(action==='minus'){if(qty<=1)cart.delete(id);else cart.set(id,qty-1);}if(action==='remove')cart.delete(id);renderCart();});
+async function loadPayPal(){
+ try{
+  const response=await fetch('/api/paypal-config');
+  const config=await response.json();
+  if(!response.ok||!config.clientId){paypalStatus.textContent='PayPal is not configured yet. Add PAYPAL_CLIENT_ID and PAYPAL_CLIENT_SECRET in your hosting environment.';return;}
+  if(!window.paypal){await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://www.paypal.com/sdk/js?client-id='+encodeURIComponent(config.clientId)+'&currency=USD&intent=capture';script.onload=resolve;script.onerror=reject;document.head.appendChild(script);});}
+  if(paypalButtonsRendered)return;
+  paypalButtonsRendered=true;
+  window.paypal.Buttons({
+   style:{layout:'vertical',color:'gold',shape:'rect',label:'paypal'},
+   createOrder:async()=>{
+    if(!cart.size)throw new Error('Your cart is empty.');
+    const response=await fetch('/api/create-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:[...cart.entries()].map(([id,quantity])=>({id,quantity}))})});
+    const data=await response.json();if(!response.ok)throw new Error(data.error||'Unable to create PayPal order.');return data.orderID;
+   },
+   onApprove:async(data)=>{
+    paypalStatus.textContent='Confirming your payment securely…';
+    const response=await fetch('/api/capture-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({orderID:data.orderID})});
+    const result=await response.json();
+    if(!response.ok||!result.success)throw new Error(result.error||'Payment could not be confirmed.');
+    cart.clear();renderCart();paypalStatus.textContent='Payment completed. Transaction ID: '+result.captureID+'. RoofArts will follow up about your report.';
+   },
+   onCancel:()=>{paypalStatus.textContent='Payment cancelled. Your cart is still saved.';},
+   onError:error=>{paypalStatus.textContent='PayPal checkout error: '+(error&&error.message?error.message:'Please try again.');}
+  }).render('#paypal-button-container');
+ }catch(error){paypalStatus.textContent='PayPal checkout is unavailable: '+error.message;}
+}
+renderCart();
+loadPayPal();
+
 const menuButton=document.querySelector('.menu-btn');
 const nav=document.querySelector('.links');
 const navLinks=[...nav.querySelectorAll('a')];
